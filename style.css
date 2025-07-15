@@ -41,6 +41,7 @@
   }
   
   /* Header */
+  
   header {
     background: url('./pics/loyo3.png');
     background-size: cover;
@@ -67,25 +68,43 @@
   .nav-links a {
     margin-left: 20px;
     text-decoration: none;
-    color: #333;
     font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-shadow:
+    0 0 8px #BFA76F,
+    0 0 24px #BFA76F,
+    0 0 42px #fff;
   }
   
   /* Hero */
+  
   .hero-content {
     max-width: 600px;
   }
-  
   .hero-content h1 {
+    color: #fff;
+    text-shadow:
+      0 0 8px #BFA76F,
+      0 0 24px #BFA76F,
+      0 0 42px #fff;
+  }
+  
+  /* .hero-content h1 {
     font-size: 48px;
     margin-bottom: 20px;
     color: #222;
   }
-  
+   */
   .hero-content p {
+    color: #fff;
     font-size: 18px;
     margin-bottom: 30px;
-    color: #555;
+    text-shadow:
+    0 0 8px #BFA76F,
+    0 0 24px #BFA76F,
+    0 0 42px #fff;
   }
   
   /* Trust Badges */
