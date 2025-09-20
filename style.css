@@ -10,7 +10,7 @@ body {
 
 /* === Header & Hero === */
 header {
-    background: linear-gradient(150deg, #f8fafc 60%, #f1e3ee 100%);
+    background: linear-gradient(150deg, #f8fafc 60%, #f7efe0 100%);
     padding-bottom: 0;
     position: relative;
     min-height: 400px;
@@ -20,7 +20,7 @@ header {
     font-family: 'EB Garamond', serif;
     font-size: 2.1rem;
     margin: 0;
-    color: #a1539c;
+    color: #BFA76F;
 }
 nav {
     display: flex;
@@ -34,14 +34,14 @@ nav {
     align-items: center;
 }
 .nav-links a {
-    color: #7a469d;
+    color: #BFA76F;
     font-weight: 600;
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.2s;
 }
 .nav-links .btn {
-    background: linear-gradient(90deg, #a1539c 60%, #7a469d 100%);
+    background: linear-gradient(90deg, #BFA76F 60%, #D9CBA3 100%);
     color: #fff;
     padding: 8px 20px;
     border-radius: 22px;
@@ -50,6 +50,7 @@ nav {
     margin-right: 10px;
 }
 
+/* Hero content */
 .hero-content {
     max-width: 600px;
     margin: 60px auto 0 auto;
@@ -60,7 +61,7 @@ nav {
 .hero-content h1 {
     font-family: 'EB Garamond', serif;
     font-size: 2.7rem;
-    color: #a1539c;
+    color: #BFA76F;
     margin-bottom: 16px;
     margin-top: 0;
 }
@@ -69,7 +70,7 @@ nav {
     margin-bottom: 26px;
 }
 .hero-content .btn {
-    background: linear-gradient(90deg, #a1539c 60%, #7a469d 100%);
+    background: linear-gradient(90deg, #BFA76F 60%, #D9CBA3 100%);
     color: #fff;
     padding: 12px 28px;
     border-radius: 28px;
@@ -87,7 +88,7 @@ nav {
     transform: translateX(-50%);
     top: 85px;
     border-radius: 25px;
-    box-shadow: 0 8px 32px rgba(100,42,105,0.12);
+    box-shadow: 0 8px 32px rgba(191,167,111,0.12);
     z-index: 1;
 }
 
@@ -122,7 +123,7 @@ nav {
 }
 .section-title {
     font-family: 'EB Garamond', serif;
-    color: #a1539c;
+    color: #BFA76F;
     font-size: 2.2rem;
     margin-bottom: 36px;
     text-align: center;
@@ -137,27 +138,27 @@ nav {
 .service-card {
     background: #fff;
     border-radius: 20px;
-    box-shadow: 0 3px 16px rgba(145, 77, 148, 0.07);
+    box-shadow: 0 3px 16px rgba(191,167,111,0.07);
     padding: 34px 18px;
     text-align: center;
     transition: box-shadow 0.2s;
 }
 .service-card:hover {
-    box-shadow: 0 5px 30px rgba(145, 77, 148, 0.16);
+    box-shadow: 0 5px 30px rgba(191,167,111,0.16);
 }
 .service-card i {
     font-size: 2.8rem;
-    color: #a1539c;
+    color: #BFA76F;
     margin-bottom: 12px;
 }
 .service-card h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
-    color: #7a469d;
+    color: #BFA76F;
 }
 .service-card p {
     font-size: 1rem;
-    color: #5a336b;
+    color: #8d7d4e;
     margin-bottom: 0;
 }
 
@@ -177,7 +178,7 @@ nav {
     background: #faf7fb;
     border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(145,77,148,0.13);
+    box-shadow: 0 2px 8px rgba(191,167,111,0.13);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,7 +198,7 @@ nav {
 .gallery-caption {
     padding: 11px 7px 9px 7px;
     font-size: 0.98rem;
-    color: #7a469d;
+    color: #BFA76F;
     text-align: center;
     background: #f6f3f8;
     width: 100%;
@@ -236,7 +237,7 @@ nav {
     background: #fff;
     border-radius: 18px;
     padding: 25px 15px 20px 15px;
-    box-shadow: 0 2px 14px rgba(145, 77, 148, 0.12);
+    box-shadow: 0 2px 14px rgba(191,167,111,0.12);
     min-width: 230px;
     max-width: 340px;
     text-align: center;
@@ -246,10 +247,62 @@ nav {
     margin-bottom: 12px;
 }
 
-/* === Footer, CTA, Forms, Buttons, etc. remain unchanged from your previous CSS for brevity, unless you want further updates === */
+/* === Footer, CTA, Forms, Buttons, etc. === */
+footer {
+    background: linear-gradient(90deg, #BFA76F 70%, #D9CBA3 100%);
+    color: #fff;
+    padding: 40px 0 15px 0;
+    text-align: center;
+    margin-top: 32px;
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+}
+footer .footer-logo {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.7rem;
+    color: #fff;
+    margin-bottom: 12px;
+    display: block;
+}
+footer .footer-links {
+    margin: 18px 0 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    justify-content: center;
+}
+footer .footer-links a {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+footer .footer-links a:hover {
+    color: #f7efe0;
+}
+footer .footer-social {
+    margin: 12px 0 16px 0;
+}
+footer .footer-social a {
+    display: inline-block;
+    margin: 0 7px;
+    color: #fff;
+    font-size: 1.35rem;
+    transition: color 0.2s;
+}
+footer .footer-social a:hover {
+    color: #e1c675;
+}
+footer .footer-copy {
+    font-size: 0.99rem;
+    color: #f7efe0;
+    margin-top: 8px;
+    letter-spacing: .02em;
+}
 
+/* Buttons */
 .btn {
-    background: linear-gradient(90deg, #a1539c 60%, #7a469d 100%);
+    background: linear-gradient(90deg, #BFA76F 60%, #D9CBA3 100%);
     color: #fff;
     padding: 12px 28px;
     border-radius: 28px;
@@ -261,9 +314,10 @@ nav {
     transition: background 0.2s;
 }
 .btn:hover {
-    background: linear-gradient(90deg, #7a469d 40%, #a1539c 100%);
+    background: linear-gradient(90deg, #D9CBA3 40%, #BFA76F 100%);
 }
 
+/* Responsive tweaks for grid layouts */
 @media (max-width: 600px) {
     .services-grid, .testimonial-grid {
         flex-direction: column;
