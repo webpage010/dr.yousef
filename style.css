@@ -20,7 +20,7 @@ header {
     font-family: 'EB Garamond', serif;
     font-size: 2.1rem;
     margin: 0;
-    color: #a1539c;
+    color: #BFA76F;
 }
 nav {
     display: flex;
@@ -34,14 +34,14 @@ nav {
     align-items: center;
 }
 .nav-links a {
-    color: #7a469d;
+    color: #BFA76F;
     font-weight: 600;
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.2s;
 }
 .nav-links .btn {
-    background: linear-gradient(90deg, #a1539c 60%, #7a469d 100%);
+    background: linear-gradient(90deg, #BFA76F 60%, #A8955E 100%);
     color: #fff;
     padding: 8px 20px;
     border-radius: 22px;
@@ -60,7 +60,7 @@ nav {
 .hero-content h1 {
     font-family: 'EB Garamond', serif;
     font-size: 2.7rem;
-    color: #a1539c;
+    color: #BFA76F;
     margin-bottom: 16px;
     margin-top: 0;
 }
@@ -69,7 +69,7 @@ nav {
     margin-bottom: 26px;
 }
 .hero-content .btn {
-    background: linear-gradient(90deg, #a1539c 60%, #7a469d 100%);
+    background: linear-gradient(90deg, #BFA76F 60%, #A8955E 100%);
     color: #fff;
     padding: 12px 28px;
     border-radius: 28px;
@@ -87,7 +87,7 @@ nav {
     transform: translateX(-50%);
     top: 85px;
     border-radius: 25px;
-    box-shadow: 0 8px 32px rgba(100,42,105,0.12);
+    box-shadow: 0 8px 32px rgba(191,167,111,0.12);
     z-index: 1;
 }
 
@@ -122,7 +122,7 @@ nav {
 }
 .section-title {
     font-family: 'EB Garamond', serif;
-    color: #a1539c;
+    color: #BFA76F;
     font-size: 2.2rem;
     margin-bottom: 36px;
     text-align: center;
@@ -137,27 +137,27 @@ nav {
 .service-card {
     background: #fff;
     border-radius: 20px;
-    box-shadow: 0 3px 16px rgba(145, 77, 148, 0.07);
+    box-shadow: 0 3px 16px rgba(191,167,111,0.07);
     padding: 34px 18px;
     text-align: center;
     transition: box-shadow 0.2s;
 }
 .service-card:hover {
-    box-shadow: 0 5px 30px rgba(145, 77, 148, 0.16);
+    box-shadow: 0 5px 30px rgba(191,167,111,0.16);
 }
 .service-card i {
     font-size: 2.8rem;
-    color: #a1539c;
+    color: #BFA76F;
     margin-bottom: 12px;
 }
 .service-card h3 {
     font-size: 1.3rem;
     margin-bottom: 10px;
-    color: #7a469d;
+    color: #BFA76F;
 }
 .service-card p {
     font-size: 1rem;
-    color: #5a336b;
+    color: #8B7355;
     margin-bottom: 0;
 }
 
@@ -177,7 +177,7 @@ nav {
     background: #faf7fb;
     border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 2px 8px rgba(145,77,148,0.13);
+    box-shadow: 0 2px 8px rgba(191,167,111,0.13);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,7 +197,7 @@ nav {
 .gallery-caption {
     padding: 11px 7px 9px 7px;
     font-size: 0.98rem;
-    color: #7a469d;
+    color: #BFA76F;
     text-align: center;
     background: #f6f3f8;
     width: 100%;
@@ -236,7 +236,7 @@ nav {
     background: #fff;
     border-radius: 18px;
     padding: 25px 15px 20px 15px;
-    box-shadow: 0 2px 14px rgba(145, 77, 148, 0.12);
+    box-shadow: 0 2px 14px rgba(191,167,111,0.12);
     min-width: 230px;
     max-width: 340px;
     text-align: center;
@@ -249,7 +249,7 @@ nav {
 /* === Footer, CTA, Forms, Buttons, etc. remain unchanged from your previous CSS for brevity, unless you want further updates === */
 
 .btn {
-    background: linear-gradient(90deg, #a1539c 60%, #7a469d 100%);
+    background: linear-gradient(90deg, #BFA76F 60%, #A8955E 100%);
     color: #fff;
     padding: 12px 28px;
     border-radius: 28px;
@@ -261,7 +261,7 @@ nav {
     transition: background 0.2s;
 }
 .btn:hover {
-    background: linear-gradient(90deg, #7a469d 40%, #a1539c 100%);
+    background: linear-gradient(90deg, #A8955E 40%, #BFA76F 100%);
 }
 
 @media (max-width: 600px) {
@@ -278,4 +278,249 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 18px;
+}
+
+/* === CTA Section === */
+.cta {
+    background: linear-gradient(135deg, #BFA76F 0%, #A8955E 100%);
+    padding: 60px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.cta h2 {
+    font-family: 'EB Garamond', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.cta .btn {
+    background: #fff;
+    color: #BFA76F;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.cta .btn:hover {
+    background: #f8f8f8;
+    transform: translateY(-2px);
+}
+
+/* === Contact Form === */
+.contact-form {
+    background: #f9f9f9;
+    padding: 70px 0;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(191,167,111,0.1);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #BFA76F;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #BFA76F;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#confirmation-message {
+    display: none;
+    text-align: center;
+    padding: 30px;
+    background: #f0f8f0;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#confirmation-message h3 {
+    color: #BFA76F;
+    margin-bottom: 10px;
+}
+
+/* === Footer === */
+footer {
+    background: #2c2c2c;
+    color: #fff;
+    padding: 50px 0 20px 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-col h3 {
+    color: #BFA76F;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-col p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-col ul li i {
+    color: #BFA76F;
+    margin-left: 10px;
+    width: 20px;
+}
+
+.footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #BFA76F;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #BFA76F;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background: #A8955E;
+    transform: translateY(-2px);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #444;
+    color: #aaa;
+}
+
+.copyright a {
+    color: #BFA76F;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+/* === WhatsApp Float Button === */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.8rem;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s;
+    z-index: 1000;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .form-container {
+        padding: 30px 20px;
+        margin: 0 20px;
+    }
+    
+    .cta h2 {
+        font-size: 1.6rem;
+    }
+    
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        bottom: 20px;
+        left: 20px;
+    }
 }
