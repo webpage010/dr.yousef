@@ -43,12 +43,6 @@ body {
 
 /* === Navbar === */
 nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: #fff;
-    box-shadow: 0 3px 18px rgba(0,0,0,0.08);
-    border-radius: 0 0 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -439,16 +433,15 @@ footer {
 
 @media (max-width: 600px) {
     header {
-        background: none !important;
-        min-height: unset;
-        padding: 12px 0 0 0;
-        display: block;
+        min-height: 50vh;
+        padding: 12px 0;
     }
     .hero-content {
-        background: none;
-        box-shadow: none;
-        padding: 0 0 20px 0;
+        background: rgba(255,255,255,0.95);
+        box-shadow: 0 4px 20px rgba(191,167,111,0.1);
+        padding: 30px 20px;
         margin: 0 auto;
+        max-width: 90%;
     }
     .nav-links {
         flex-direction: row;
