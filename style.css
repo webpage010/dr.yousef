@@ -385,43 +385,52 @@ footer {
 .contact-form {
     background: #faf7fb;
     padding: 60px 0 40px 0;
+    min-height: 500px;
 }
 
 .form-container {
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
     background: #fff;
     border-radius: 18px;
     box-shadow: 0 2px 14px rgba(191,167,111,0.13);
-    padding: 32px 20px 24px 20px;
+    padding: 28px 22px 22px 22px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 0;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 14px;
+    align-items: stretch;
+    margin-bottom: 18px;
 }
 
 .form-group label {
     font-weight: 600;
     color: #BFA76F;
-    margin-bottom: 6px;
-    font-size: 1.03rem;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: right;
+    padding-right: 2px;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
-    padding: 10px 12px;
+    padding: 11px 14px;
     border: 1.5px solid #e5dbbb;
     border-radius: 8px;
     font-size: 1rem;
     background: #f7efe0;
     transition: border 0.2s;
-    margin-bottom: 4px;
+    margin-bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: right;
+    direction: rtl;
+    color: #222;
 }
 
 .form-group input:focus,
@@ -432,28 +441,45 @@ footer {
     background: #fffbe9;
 }
 
+.form-group textarea {
+    min-height: 70px;
+    resize: vertical;
+}
+
 button.btn {
-    margin-top: 10px;
     font-size: 1.08rem;
     padding: 12px 0;
     width: 100%;
+    border-radius: 28px;
+    margin-top: 10px;
+    background: linear-gradient(90deg, #BFA76F 60%, #D9CBA3 100%);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    transition: background 0.2s;
+    box-shadow: 0 1.5px 8px rgba(191,167,111,0.11);
+    letter-spacing: 0.02em;
 }
 
-/* Confirmation message styling */
+button.btn:hover {
+    background: linear-gradient(90deg, #D9CBA3 40%, #BFA76F 100%);
+}
+
 #confirmation-message {
-    display: none; /* Shown only after submit */
+    display: none; /* Set to block on submit via JS */
     text-align: center;
     background: #f7efe0;
     color: #BFA76F;
     border-radius: 8px;
     padding: 16px;
-    margin-top: 20px;
-    font-size: 1.15rem;
+    margin-top: 22px;
+    font-size: 1.12rem;
+    font-weight: 600;
 }
 
-/* Responsive tweaks */
 @media (max-width: 600px) {
     .form-container {
-        padding: 16px 6px 12px 6px;
+        max-width: 97vw;
+        padding: 12px 3vw 12px 3vw;
     }
 }
