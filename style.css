@@ -93,7 +93,7 @@ nav {
     box-shadow: 0 8px 32px rgba(191,167,111,0.12);
     z-index: 1;
     background: #ffeccc;
-    border: 2px dashed #BFA76F;
+    border: none;
 }
 @media (max-width: 800px) {
     .hero-img-mobile {
@@ -379,4 +379,81 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 18px;
+}
+
+/* === Contact Form Section === */
+.contact-form {
+    background: #faf7fb;
+    padding: 60px 0 40px 0;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 14px rgba(191,167,111,0.13);
+    padding: 32px 20px 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #BFA76F;
+    margin-bottom: 6px;
+    font-size: 1.03rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 10px 12px;
+    border: 1.5px solid #e5dbbb;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #f7efe0;
+    transition: border 0.2s;
+    margin-bottom: 4px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border: 1.5px solid #BFA76F;
+    background: #fffbe9;
+}
+
+button.btn {
+    margin-top: 10px;
+    font-size: 1.08rem;
+    padding: 12px 0;
+    width: 100%;
+}
+
+/* Confirmation message styling */
+#confirmation-message {
+    display: none; /* Shown only after submit */
+    text-align: center;
+    background: #f7efe0;
+    color: #BFA76F;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 20px;
+    font-size: 1.15rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 16px 6px 12px 6px;
+    }
 }
