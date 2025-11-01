@@ -5,22 +5,21 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Dr. Yousef Durr — Face Design</title>
 
-  <!-- Link to the theme stylesheet (add to your project) -->
+  <!-- Link to the theme stylesheet -->
   <link rel="stylesheet" href="/assets/css/theme.css" />
 
-  <!-- Optional: use Google Fonts fallback for a classic serif + clean sans -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
-      <!-- Replace /pics/logo.png with your actual new logo file (SVG or PNG) placed in pics/ folder -->
+      <!-- logo placed in /pics -->
       <a class="logo" href="/">
-        <img src="/pics/logo.png" alt="Dr. Yousef Durr logo" width="160" height="64" />
+        <img src="/pics/logo.png" alt="Dr. Yousef Durr logo" width="180" height="72" />
       </a>
 
-      <!-- optional nav (kept minimal for the elegant look) -->
       <nav class="main-nav" aria-label="Main">
         <ul>
           <li><a href="/about">About</a></li>
@@ -32,12 +31,10 @@
   </header>
 
   <main class="hero">
-    <!-- The hero uses a large vertical canvas matching your image composition -->
     <div class="hero-canvas">
-      <!-- content can remain mostly empty as in the provided design; use bottom chips for contact -->
       <div class="contact-chips">
-        <a class="chip" href="tel:054-934-1582">054-934-1582 <span class="chip-icon">📞</span></a>
-        <a class="chip" href="/location">שפרעם | شفامرو <span class="chip-icon">📍</span></a>
+        <a class="chip phone" href="tel:054-934-1582">054-934-1582 <span class="chip-icon">📞</span></a>
+        <a class="chip location" href="/location">שפרעם | شفامرو <span class="chip-icon">📍</span></a>
       </div>
     </div>
   </main>
@@ -49,7 +46,6 @@
   </footer>
 
   <script>
-    // small script to set current year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
