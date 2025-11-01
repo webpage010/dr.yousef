@@ -1,0 +1,142 @@
+:root{
+  /* Palette */
+  --bg-beige: #e9ded1; /* warm beige base */
+  --bg-beige-dark: #d7ccbf; /* subtle contrast */
+  --accent-black: #0b0b0b;
+  --muted: rgba(11,11,11,0.6);
+
+  /* Typography */
+  --serif: "Merriweather", Georgia, "Times New Roman", serif;
+  --ui-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Layout */
+  --max-width: 1200px;
+  --gutter: 28px;
+  --chip-radius: 18px;
+}
+
+/* Reset and base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--ui-sans);
+  color:var(--accent-black);
+  background: linear-gradient(180deg, var(--bg-beige) 0%, var(--bg-beige-dark) 100%);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Optional soft fabric texture layer (subtle) */
+.hero::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  background: radial-gradient(1200px 600px at 10% 15%, rgba(255,255,255,0.02), transparent 20%),
+              radial-gradient(900px 300px at 80% 80%, rgba(0,0,0,0.02), transparent 18%);
+  mix-blend-mode:soft-light;
+  z-index:0;
+}
+
+/* Header */
+.site-header{
+  position:relative;
+  z-index:2;
+  padding:34px var(--gutter);
+  display:flex;
+  justify-content:center;
+}
+.header-inner{
+  width:100%;
+  max-width:var(--max-width);
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+}
+.logo img{
+  display:block;
+  /* let the logo be black by default: replace file with black variant */
+  filter:none;
+}
+
+/* Nav minimal, understated */
+.main-nav ul{
+  display:flex;
+  gap:20px;
+  list-style:none;
+  margin:0;
+  padding:0;
+  align-items:center;
+}
+.main-nav a{
+  color:var(--muted);
+  text-decoration:none;
+  font-size:15px;
+  letter-spacing:0.2px;
+  padding:8px 10px;
+}
+.main-nav a:hover{color:var(--accent-black)}
+
+/* Hero area fills the viewport like the image */
+.hero{
+  min-height:92vh;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  position:relative;
+  padding-top:8px;
+  z-index:1;
+}
+.hero-canvas{
+  width:100%;
+  max-width:1200px;
+  padding:48px var(--gutter) 96px;
+  position:relative;
+  display:block;
+  /* keep content area visually empty as in the sample */
+}
+
+/* Contact chips at the bottom center */
+.contact-chips{
+  position:fixed;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:28px;
+  display:flex;
+  gap:12px;
+  z-index:3;
+}
+.chip{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  background:rgba(255,255,255,0.9);
+  color:var(--accent-black);
+  border-radius:var(--chip-radius);
+  padding:10px 16px;
+  text-decoration:none;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06), 0 6px 18px rgba(10,10,10,0.06);
+  border:1px solid rgba(11,11,11,0.06);
+  font-size:14px;
+  font-weight:500;
+  font-family:var(--ui-sans);
+}
+.chip-icon{opacity:0.7; font-size:14px}
+
+/* Footer */
+.site-footer{
+  padding:28px var(--gutter);
+  text-align:center;
+  color:var(--muted);
+  background:transparent;
+  font-size:13px;
+}
+
+/* Typography touches for elegance */
+h1,h2,h3{
+  font-family:var(--serif);
+  color:var(--accent-black);
+  margin:0 0 14px 0;
+}
+p{margin:0 0 12px 0; color:var(--muted) }
