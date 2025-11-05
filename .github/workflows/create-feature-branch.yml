@@ -36,5 +36,5 @@ jobs:
           fi
           
           # Push to remote (will update if exists, create if not)
-          git push origin feature/redesign-update-fixed --force
+          git push origin feature/redesign-update-fixed --force-with-lease
           echo "Branch feature/redesign-update-fixed has been created/updated"

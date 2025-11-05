@@ -14,7 +14,7 @@ A GitHub Actions workflow has been created to automatically create the `feature/
 
 Once approved, the workflow will automatically run whenever changes are pushed to `copilot/featureredesign-update-fixed`.
 
-#### Option 2: Create Branch from This PR
+### Option 2: Create Branch from This PR
 
 ```bash
 # Clone the repository
@@ -27,7 +27,7 @@ git checkout -b feature/redesign-update-fixed origin/copilot/featureredesign-upd
 git push origin feature/redesign-update-fixed
 ```
 
-#### Option 3: Via GitHub Web Interface
+### Option 3: Via GitHub Web Interface
 
 1. Go to the repository on GitHub
 2. Click on the "Branch" dropdown
