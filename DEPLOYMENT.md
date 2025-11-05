@@ -2,9 +2,17 @@
 
 ## Creating the feature/redesign-update-fixed Branch
 
-To deploy the site from the `feature/redesign-update-fixed` branch, follow these steps:
+The `feature/redesign-update-fixed` branch will be automatically created by the GitHub Actions workflow when changes are pushed to `copilot/featureredesign-update-fixed`.
 
-### Option 1: Create Branch from This PR
+### Automatic Creation (Recommended)
+
+The workflow `.github/workflows/create-feature-branch.yml` automatically creates/updates the `feature/redesign-update-fixed` branch when:
+- Changes are pushed to `copilot/featureredesign-update-fixed`
+- The workflow is manually triggered via Actions tab
+
+### Manual Creation Options
+
+#### Option 1: Create Branch from This PR
 
 ```bash
 # Clone the repository
@@ -17,7 +25,7 @@ git checkout -b feature/redesign-update-fixed origin/copilot/featureredesign-upd
 git push origin feature/redesign-update-fixed
 ```
 
-### Option 2: Via GitHub Web Interface
+#### Option 2: Via GitHub Web Interface
 
 1. Go to the repository on GitHub
 2. Click on the "Branch" dropdown
