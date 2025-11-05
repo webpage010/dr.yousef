@@ -2,17 +2,19 @@
 
 ## Creating the feature/redesign-update-fixed Branch
 
-The `feature/redesign-update-fixed` branch will be automatically created by the GitHub Actions workflow when changes are pushed to `copilot/featureredesign-update-fixed`.
+### Option 1: Approve the GitHub Actions Workflow (Recommended)
 
-### Automatic Creation (Recommended)
+A GitHub Actions workflow has been created to automatically create the `feature/redesign-update-fixed` branch. To use it:
 
-The workflow `.github/workflows/create-feature-branch.yml` automatically creates/updates the `feature/redesign-update-fixed` branch when:
-- Changes are pushed to `copilot/featureredesign-update-fixed`
-- The workflow is manually triggered via Actions tab
+1. Go to the repository on GitHub
+2. Navigate to the "Actions" tab
+3. Find the workflow run "Create feature/redesign-update-fixed Branch"
+4. If it shows "Action required", click on it and approve the workflow to run
+5. The workflow will automatically create/update the `feature/redesign-update-fixed` branch
 
-### Manual Creation Options
+Once approved, the workflow will automatically run whenever changes are pushed to `copilot/featureredesign-update-fixed`.
 
-#### Option 1: Create Branch from This PR
+#### Option 2: Create Branch from This PR
 
 ```bash
 # Clone the repository
@@ -25,7 +27,7 @@ git checkout -b feature/redesign-update-fixed origin/copilot/featureredesign-upd
 git push origin feature/redesign-update-fixed
 ```
 
-#### Option 2: Via GitHub Web Interface
+#### Option 3: Via GitHub Web Interface
 
 1. Go to the repository on GitHub
 2. Click on the "Branch" dropdown
