@@ -1,6 +1,6 @@
 /* === General Styles === */
 body {
-    font-family: 'Manrope', Arial, sans-serif;
+    font-family: 'Inter', 'Manrope', Arial, sans-serif;
     background: #F5F0E6;
     color: #1a1a1a;
     margin: 0;
@@ -23,7 +23,7 @@ header {
     gap: 12px;
 }
 .logo h1 {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Playfair Display', 'EB Garamond', serif;
     font-size: 2.1rem;
     margin: 0;
     color: #1a1a1a;
@@ -79,11 +79,12 @@ nav {
     z-index: 2;
 }
 .hero-content h1 {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Playfair Display', 'EB Garamond', serif;
     font-size: 2.7rem;
     color: #1a1a1a;
     margin-bottom: 16px;
     margin-top: 0;
+    font-weight: 600;
 }
 .hero-content p {
     font-size: 1.25rem;
@@ -105,32 +106,54 @@ nav {
     background: #333;
 }
 
-/* Mobile Hero Image Fallback for Debug */
+/* Mobile Hero Image */
 .hero-img-mobile {
     display: none;
-    width: 100vw;
-    max-width: 470px;
-    margin: 0 auto;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 85px;
-    border-radius: 25px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 20px auto;
+    border-radius: 20px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.08);
-    z-index: 1;
-    background: #F5F0E6;
-    border: none;
+    object-fit: cover;
 }
 @media (max-width: 800px) {
+    header {
+        background: #F5F0E6;
+        padding-bottom: 40px;
+    }
     .hero-img-mobile {
         display: block;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        max-height: 500px;
+        object-fit: cover;
+        margin: 20px auto 30px auto;
+        border-radius: 20px;
     }
     .hero-content {
-        margin-top: 280px;
+        margin-top: 0;
+        position: relative;
+        padding: 0 20px;
+        background: transparent;
+        backdrop-filter: none;
+    }
+    .hero-content h1 {
+        color: #1a1a1a;
+        font-size: 2.2rem;
+    }
+    .hero-content p {
+        color: #1a1a1a;
+        font-size: 1.1rem;
     }
     nav {
         flex-direction: column;
         gap: 10px;
+        padding: 20px 0 10px 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
     }
 }
 @media (min-width: 801px) {
@@ -150,12 +173,12 @@ nav {
     width: 100%;
 }
 .section-title {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Playfair Display', 'EB Garamond', serif;
     color: #1a1a1a;
     font-size: 2.4rem;
     margin-bottom: 50px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.01em;
 }
 .services-grid {
@@ -228,7 +251,7 @@ nav {
     margin-bottom: 12px;
     color: #1a1a1a;
     font-weight: 600;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Playfair Display', 'EB Garamond', serif;
     letter-spacing: 0.01em;
 }
 .service-card p {
@@ -240,28 +263,35 @@ nav {
 }
 @media (max-width: 768px) {
     .service-card {
-        width: 280px;
-        min-width: 280px;
-        flex-basis: 280px;
-        flex-shrink: 0;
+        width: 280px !important;
+        min-width: 280px !important;
+        flex-basis: 280px !important;
+        flex-shrink: 0 !important;
         padding: 24px 20px;
     }
     .services-grid {
         gap: 12px;
         padding: 15px;
-        flex-wrap: nowrap;
+        flex-wrap: nowrap !important;
+        display: flex !important;
+        flex-direction: row !important;
+    }
+    .services .container {
+        max-width: 100% !important;
+        padding: 0 !important;
     }
     .section-title {
         font-size: 2rem;
         margin-bottom: 40px;
+        padding: 0 20px;
     }
 }
 @media (max-width: 480px) {
     .service-card {
-        width: 260px;
-        min-width: 260px;
-        flex-basis: 260px;
-        flex-shrink: 0;
+        width: 260px !important;
+        min-width: 260px !important;
+        flex-basis: 260px !important;
+        flex-shrink: 0 !important;
         padding: 22px 18px;
     }
     .service-card h3 {
@@ -274,7 +304,9 @@ nav {
     .services-grid {
         gap: 12px;
         padding: 12px;
-        flex-wrap: nowrap;
+        flex-wrap: nowrap !important;
+        display: flex !important;
+        flex-direction: row !important;
     }
 }
 
@@ -460,24 +492,33 @@ nav {
 }
 @media (max-width: 768px) {
     .testimonial-card {
-        width: 280px;
-        min-width: 280px;
-        flex-basis: 280px;
-        flex-shrink: 0;
+        width: 280px !important;
+        min-width: 280px !important;
+        flex-basis: 280px !important;
+        flex-shrink: 0 !important;
         padding: 24px 20px;
     }
     .testimonial-grid {
         gap: 12px;
         padding: 15px;
-        flex-wrap: nowrap;
+        flex-wrap: nowrap !important;
+        display: flex !important;
+        flex-direction: row !important;
+    }
+    .testimonials .container {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+    .testimonials .section-title {
+        padding: 0 20px;
     }
 }
 @media (max-width: 480px) {
     .testimonial-card {
-        width: 260px;
-        min-width: 260px;
-        flex-basis: 260px;
-        flex-shrink: 0;
+        width: 260px !important;
+        min-width: 260px !important;
+        flex-basis: 260px !important;
+        flex-shrink: 0 !important;
         padding: 22px 18px;
     }
     .testimonial-card p {
@@ -494,7 +535,9 @@ nav {
     .testimonial-grid {
         gap: 12px;
         padding: 12px;
-        flex-wrap: nowrap;
+        flex-wrap: nowrap !important;
+        display: flex !important;
+        flex-direction: row !important;
     }
 }
 
@@ -750,11 +793,12 @@ button.btn:hover {
     text-align: center;
 }
 .cta h2 {
-    font-family: 'EB Garamond', serif;
+    font-family: 'Playfair Display', 'EB Garamond', serif;
     color: #1a1a1a;
     font-size: 2rem;
     margin-bottom: 24px;
     line-height: 1.4;
+    font-weight: 600;
 }
 
 /* === WhatsApp Float Button === */
