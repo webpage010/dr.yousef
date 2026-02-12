@@ -1,0 +1,40 @@
+name: Create feature/redesign-update-fixed Branch
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - copilot/featureredesign-update-fixed
+
+permissions:
+  contents: write
+
+jobs:
+  create-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: copilot/featureredesign-update-fixed
+      
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      
+      - name: Create and push feature/redesign-update-fixed branch
+        run: |
+          # Check if branch exists locally
+          if git show-ref --verify --quiet refs/heads/feature/redesign-update-fixed; then
+            echo "Branch feature/redesign-update-fixed already exists locally"
+            git checkout feature/redesign-update-fixed
+          else
+            echo "Creating feature/redesign-update-fixed branch"
+            git checkout -b feature/redesign-update-fixed
+          fi
+          
+          # Push to remote (will update if exists, create if not)
+          git push origin feature/redesign-update-fixed --force-with-lease
+          echo "Branch feature/redesign-update-fixed has been created/updated"
